@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev & yarn run open-browser",
-    "open-browser": "open http://localhost:3000",
+    "dev": "next dev -p 8787 & yarn run open-browser",
+    "open-browser": "open http://localhost:8787",
     "build": "next build",
     "start": "next start",
     "lint:fix": "eslint . --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",

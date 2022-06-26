@@ -1,11 +1,9 @@
-import * as React from "react";
-import type { NextPage } from "next";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import Link from "@/components/Link";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import type { NextPage } from "next";
 
-const Home: NextPage = () => {
+const Index: NextPage = () => {
   return (
     <Container maxWidth="lg">
       <Box
@@ -33,4 +31,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Index;
