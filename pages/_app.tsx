@@ -6,6 +6,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import createEmotionCache from "../src/createEmotionCache";
 import theme from "../src/theme";
+import "./index.css";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
