@@ -15,6 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import HomeIcon from "@mui/icons-material/Home";
 import { ButtonGroup, Drawer, List, ListItem, ListItemButton, ListItemText, useScrollTrigger } from "@mui/material";
 import Link from "./Link";
+import { useRouter } from "next/router";
 
 function ElevationScroll(props: any) {
   const { children } = props;
@@ -30,8 +31,16 @@ function ElevationScroll(props: any) {
 
 const pages = ["首頁", "合作案例"];
 
+// console.log(router);
+
 const TopBar = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
+
+  const router = useRouter();
+  const goRoute = (page) => {
+    if (page === "首頁") router.push("./");
+    else if (page === "合作案例") router.push("./cooperate");
+  };
 
   return (
     <>
@@ -68,7 +77,12 @@ const TopBar = () => {
               </Typography>
               <Box sx={{ marginLeft: "auto", display: { xs: "none", md: "flex" } }}>
                 {pages.map((page) => (
-                  <Button key={page} color="inherit" sx={{ fontSize: "16px", display: "block", px: 2 }}>
+                  <Button
+                    key={page}
+                    color="inherit"
+                    sx={{ fontSize: "16px", display: "block", px: 2 }}
+                    onClick={() => goRoute(page)}
+                  >
                     {page}
                   </Button>
                 ))}

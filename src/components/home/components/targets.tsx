@@ -1,10 +1,10 @@
 import { Box as Mbox } from "@mui/material";
 import TargetItem from "./targetItem";
 
-import target1 from "../../../src/image/target1.png";
-import target2 from "../../../src/image/target2.png";
-import target3 from "../../../src/image/target3.png";
-import target4 from "../../../src/image/target4.png";
+import target1 from "../../../image/target1.png";
+import target2 from "../../../image/target2.png";
+import target3 from "../../../image/target3.png";
+import target4 from "../../../image/target4.png";
 
 const containerCss = {
   display: "flex",
