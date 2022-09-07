@@ -41,9 +41,9 @@ const cases = () => {
             height="360"
             src="https://www.youtube.com/embed/MYMdmFna6o4"
             title="【北歐風】70萬搞定！20坪北歐風收納機能宅【寓森林設計-張姍姍】"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
           {/* <YouTube videoId="MYMdmFna6o4" opts={opts} style={{ width: "100%" }} /> */}
         </Box>
@@ -54,9 +54,9 @@ const cases = () => {
             height="360"
             src="https://www.youtube.com/embed/VCfFivT5FJQ"
             title="量身訂製 打造輕奢渡假宅 ｜富麗室內裝修設計-王誌霆｜幸福空間"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
           {/* <YouTube videoId="VCfFivT5FJQ" opts={opts} style={{ width: "100%" }} /> */}
         </Box>

@@ -6,7 +6,7 @@ import target2 from "../../../image/target2.png";
 import target3 from "../../../image/target3.png";
 import target4 from "../../../image/target4.png";
 
-const containerCss = {
+const containerCss: React.CSSProperties = {
   display: "flex",
   flexWrap: "wrap",
   maxWidth: "1000px",

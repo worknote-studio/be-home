@@ -37,7 +37,7 @@ const TopBar = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   const router = useRouter();
-  const goRoute = (page) => {
+  const goRoute = (page: string) => {
     if (page === "首頁") router.push("./");
     else if (page === "合作案例") router.push("./cooperate");
   };
