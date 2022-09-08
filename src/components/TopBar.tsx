@@ -94,10 +94,10 @@ const TopBar = () => {
       <Drawer anchor="left" open={menuOpen} onClose={() => setMenuOpen(false)}>
         <Box width="250px" onClick={() => setMenuOpen(false)} onKeyDown={() => setMenuOpen(false)}>
           <List>
-            {pages.map((text, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton component="a" href="#simple-list">
-                  <ListItemText primary={text} />
+            {pages.map((page, index) => (
+              <ListItem key={page} disablePadding>
+                <ListItemButton component="a" href="#simple-list" onClick={() => goRoute(page)}>
+                  <ListItemText primary={page} />
                 </ListItemButton>
               </ListItem>
             ))}
