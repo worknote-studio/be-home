@@ -9,7 +9,13 @@ const boxes = () => {
       <Mbox style={{ backgroundColor: "#e5ded2" }}>
         <Mbox
           style={{ maxWidth: "1000px", margin: "0 auto" }}
-          sx={{ display: "flex", alignItems: "center", justifyContent: "space-around", flexWrap: "wrap", width: "100%" }}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-around",
+            flexWrap: "wrap",
+            width: "100%",
+          }}
         >
           {contents.map((v, i) => (
             <Box text={v} key={i} />

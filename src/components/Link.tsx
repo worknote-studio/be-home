@@ -17,11 +17,23 @@ type NextLinkComposed = Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "hre
     href?: NextLinkProps["href"];
   };
 
-export const NextLinkComposed = React.forwardRef<HTMLAnchorElement, NextLinkComposed>(function NextLinkComposed(props, ref) {
+export const NextLinkComposed = React.forwardRef<HTMLAnchorElement, NextLinkComposed>(function NextLinkComposed(
+  props,
+  ref
+) {
   const { to, linkAs, href, replace, scroll, shallow, prefetch, locale, ...other } = props;
 
   return (
-    <NextLink href={to} prefetch={prefetch} as={linkAs} replace={replace} scroll={scroll} shallow={shallow} passHref locale={locale}>
+    <NextLink
+      href={to}
+      prefetch={prefetch}
+      as={linkAs}
+      replace={replace}
+      scroll={scroll}
+      shallow={shallow}
+      passHref
+      locale={locale}
+    >
       <Anchor ref={ref} {...other} />
     </NextLink>
   );
